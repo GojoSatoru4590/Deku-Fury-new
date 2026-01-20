@@ -124,7 +124,7 @@ async def start_command(client: Client, message: Message):
             logging.info(f"User {id} successfully verified with token: {token}")
 
             return await message.reply(
-                f"<blockquote>» ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs !!, 🥳🥳\n\n»ʏᴏᴜʀ ᴛᴏᴋᴇɴ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ɴᴏᴡ ᴠᴀʟɪᴅ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\n» ɴᴏᴡ ʏᴏᴜ <a href='https://t.me/Mugiwaras_Network/31'>ɢᴇᴛ ᴀᴄᴇss ᴛᴏ ᴀʟʟ 4 ʙᴏᴛs</a> ᴏғ @anime_raven ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}.</blockquote>",
+                f"<blockquote>» ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs !!, 🥳🥳\n\n»ʏᴏᴜʀ ᴛᴏᴋᴇɴ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ɴᴏᴡ ᴠᴀʟɪᴅ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\n» ɴᴏᴡ ʏᴏᴜ <a href='https://t.me/Mugiwaras_Network'>ɢᴇᴛ ᴀᴄᴇss ᴛᴏ ᴀʟʟ 4 ʙᴏᴛs</a> ᴏғ @Anime_Fury ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}.</blockquote>",
                 protect_content=False,
                 quote=True,
 		disable_web_page_preview=True
@@ -144,7 +144,7 @@ async def start_command(client: Client, message: Message):
 
             return await message.reply_photo(
                 photo=TOKEN_PIC,
-                caption=f"<blockquote><b>›› Hey!!, {message.from_user.mention} ~</b></blockquote>\n\n<i>Your Ads token is expired, refresh your token and try again.</i> \n\n<b>Token Timeout:</b> {get_exp_time(VERIFY_EXPIRE)} \n\n<blockquote expandable><b>What is token?</b> \n<i>This is an ads token. If you pass 1 ad, you can use the bot for {get_exp_time(VERIFY_EXPIRE)} after passing the ad.</i>\n\nOnce done you will <a href='https://t.me/Battousai_Network/31'>get access to all our 4 bots</a> for {get_exp_time(VERIFY_EXPIRE)} which are ⬇️\n\n» @Deku_Fury_Bot\n» @Devil_Fruit_Bot\n» @Klein_Moretti_Fury_Bot\n» @Shanks_Fury_Bot\n\n<b>APPLE/IPHONE USERS COPY TOKEN LINK AND OPEN IN CHROME BROWSER</b></blockquote>",
+                caption=f"<blockquote><b>›› Hey!!, {message.from_user.mention} ~</b></blockquote>\n\n<i>Your Ads token is expired, refresh your token and try again.</i> \n\n<b>Token Timeout:</b> {get_exp_time(VERIFY_EXPIRE)} \n\n<blockquote expandable><b>What is token?</b> \n<i>This is an ads token. If you pass 1 ad, you can use the bot for {get_exp_time(VERIFY_EXPIRE)} after passing the ad.</i>\n\nOnce done you will <a href='https://t.me/Anime_Fury'>get access to all our 4 bots</a> for {get_exp_time(VERIFY_EXPIRE)} which are ⬇️\n\n» @Deku_Fury_Bot\n» @Klein_Moretti_Fury_Bot\n» @Shanks_Fury_Bot\n\n<b>APPLE/IPHONE USERS COPY TOKEN LINK AND OPEN IN CHROME BROWSER</b></blockquote>",
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("»  ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ  «", url=link)],
                     [InlineKeyboardButton("» ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ/ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ «", url=TUT_VID)],
@@ -234,7 +234,7 @@ async def start_command(client: Client, message: Message):
                     [InlineKeyboardButton("• ᴄʟɪᴄᴋ ғᴏʀ ᴍᴏʀᴇ •", callback_data='about')],
                     [InlineKeyboardButton("• sᴇᴛᴛɪɴɢs", callback_data='setting'),
                      InlineKeyboardButton(' ᴅᴇᴠᴇʟᴏᴘᴇʀ •', url='https://t.me/Xndroids')],
-                    [InlineKeyboardButton("• ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ •", url='https://t.me/battousai_network')],
+                    [InlineKeyboardButton("• ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ •", url='https://t.me/Mugiwaras_Network')],
                 ])
         await message.reply_photo(
             photo = random.choice(PICS),
@@ -307,7 +307,7 @@ async def not_joined(client: Client, message: Message):
 
                 except Exception as e:
                     print(f"Can't Export Channel Name and Link..., Please Check If the Bot is admin in the FORCE SUB CHANNELS:\nProvided Force sub Channel:- {chat_id}")
-                    return await temp.edit(f"<b>! ᴇʀʀᴏʀ, ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴛᴏ sᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇs @metaui</b>\n<blockquote expandable><b>ʀᴇᴀsᴏɴ:</b> {e}</blockquote>")
+                    return await temp.edit(f"<b>! ᴇʀʀᴏʀ, ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴛᴏ sᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇs @urr_sanjiii</b>\n<blockquote expandable><b>ʀᴇᴀsᴏɴ:</b> {e}</blockquote>")
 
         # If user has joined all channels, delete temp and return (success - they're verified)
         if count == 0:
