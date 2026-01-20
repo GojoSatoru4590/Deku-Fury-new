@@ -86,7 +86,7 @@ async def search_anime_command(client: Client, message: Message):
         keyboard = [[InlineKeyboardButton(f"{get_anime_emoji(anime.get('title'))} {anime.get('title')}", callback_data=f'detail_{anime.get("mal_id")}')] 
                     for anime in search_results[:10]]
         keyboard.extend([
-            [InlineKeyboardButton("• ғᴏʀ ", url='https://t.me/The_Mugiwaras'),
+            [InlineKeyboardButton("• ғᴏʀ ", url='https://t.me/Mugiwaras_Network'),
              InlineKeyboardButton(" ᴍᴏʀᴇ •", url='https://t.me/Mugiwaras_Network')],
             [InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data='close')]
              ])
