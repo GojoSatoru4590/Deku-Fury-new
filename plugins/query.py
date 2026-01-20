@@ -886,7 +886,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     markup = [[InlineKeyboardButton(
                         'sᴇᴛ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ ᴜʀʟ', callback_data='set_tut_video')]]
                     return await set_msg.reply(
-                        "<b>ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴀ ʟɪɴᴋ ᴛᴏ ᴀ ᴠᴀʟɪᴅ ᴠɪᴅᴇᴏ.\n\n<blockquote>ғᴏʀ ᴇxᴀᴍᴘʟᴇ: <code>https://t.me/Battousai_Network/31</code></blockquote>\n\n» ᴛʀʏ ᴀɢᴀɪɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ..!!</b>", reply_markup=InlineKeyboardMarkup(markup))
+                        "<b>ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴀ ʟɪɴᴋ ᴛᴏ ᴀ ᴠᴀʟɪᴅ ᴠɪᴅᴇᴏ.\n\n<blockquote>ғᴏʀ ᴇxᴀᴍᴘʟᴇ: <code>https://t.me/Mugiwaras_Network</code></blockquote>\n\n» ᴛʀʏ ᴀɢᴀɪɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ..!!</b>", reply_markup=InlineKeyboardMarkup(markup))
 
             except Exception as e:
                 try:
